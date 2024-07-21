@@ -12,8 +12,8 @@ let usr={
     email:"usr@gmail.com",
     phno:1234567890
 }
-let usr2 = usr1
+let usr2 = usr
 usr2.email="usr2@outlook.com"
-// the value of both will be changed 
+// since usr is a reference datatype when the usr2 changes data it will affect it 
 console.log(usr.email);
 console.log(usr2.email);
