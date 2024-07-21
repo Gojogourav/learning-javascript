@@ -1,5 +1,6 @@
 const accountId = 1234
-let accountEmail="random@gmail.com"//always use const and let instead of var
+let accountEmail="random@gmail.com"
+//always use const and let instead of var
 var accountPassword ="1234"
 accountCity = "Jaipur"
 
