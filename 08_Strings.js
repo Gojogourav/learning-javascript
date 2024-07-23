@@ -31,4 +31,4 @@ console.log(username.trim());
 const url = "https://google%20hindi.com"
 console.log(url.replace('%20','-'));
 console.log(url.includes("hindi"));
-console.log(gameName.split());
+console.log(gameName.split("")); //search mdn reference
