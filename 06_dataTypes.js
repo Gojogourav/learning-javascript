@@ -27,3 +27,17 @@ const myFunction = function(){
     console.log("Hello world");
 }
 console.log(typeof myFunction);
+// NULL DATATYPE RETURNS OBJECT TYPE
+// 1) Primitive Datatypes
+//        Number => number
+//        String  => string
+//        Boolean  => boolean
+//        null  => object
+//        undefined  =>  undefined
+//        Symbol  =>  symbol
+//        BigInt  =>  bigint
+
+// 2) Non-primitive Datatypes
+//        Arrays  =>  object
+//        Function  =>  function
+//        Object  =>  object

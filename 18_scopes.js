@@ -31,13 +31,17 @@ if(true){
     }
 }
 
-//*************Interestingggggggggg ************
+//*************Interesting*********************
 
 function addone(value){
     return value+1
 }
 console.log(addone(5));
 
+
+//you cannot access the below function before declaring it
 const addTwo = function(num){
     return num+2
 }
+
+addTwo(5)

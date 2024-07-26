@@ -8,3 +8,11 @@ const course ={
 const {courseInstructor : Instructor} =  course
 
 console.log(Instructor);
+
+//API LOOK LIKE THIS 
+//{
+//     "name":"Gourav",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+

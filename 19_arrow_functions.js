@@ -41,5 +41,3 @@ const addTwo1=(num1,num2) =>  (num1+num2)
 console.log(addTwo1(4,5));
 //to not write return wrap it in parenthisis
 
-const myArray = [2,3,4,55,6,7]
-myArray.forEach(()=>myArray[0])
