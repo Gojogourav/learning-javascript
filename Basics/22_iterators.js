@@ -1,4 +1,4 @@
-// for
+//for
 
 // for(let i=1;i<=10;i++){
 //     if(i==5){
@@ -30,8 +30,8 @@
 //     i=i*2
 // }
 
-// let i=13
-// do{
-//     console.log(i);
-//     i++
-// }while(i<=10);
+let i=13
+do{
+    console.log(i);
+    i++
+}while(i<=10);

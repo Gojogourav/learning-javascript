@@ -67,6 +67,6 @@ const myCoding = [
     }
 ]
 myCoding.forEach((item)=>{
-    console.log(`languageFileName: ${item[languageFileName]}`);
-    console.log(`languageName: ${item.languageName}`);
-})
+    console.log(`languageFileName: ${item["languageFileName"]}`);
+    console.log(`languageName: ${item["languageName"]}`);
+    });
