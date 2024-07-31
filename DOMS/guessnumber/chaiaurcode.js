@@ -3,7 +3,10 @@ const submit = document.querySelector('#subt')
 const inputList = document.querySelector('.guesses') 
 const remainingGuess = document.querySelector('.lastResult')
 const message = document.querySelector('.lowOrHi')
-
+const body = document.querySelector('body')
+const paras = document.querySelector('.resultParas')
+const wrapper = document.querySelector('#wrapper')
+ 
 let guessArr = []
 let gameStart = true 
 let count = 1
@@ -30,10 +33,6 @@ if(gameStart){
     })
 }
 
-// function inputValidation(){
-//     //checks if the input value is actually a number
-
-// }
 
 function inputComparison(input){
     //compares the value of input and generated value
@@ -47,6 +46,10 @@ function inputComparison(input){
     }
     else{
         messageDisplay('YOU HAVE WON THE GAMEEEEE!!!  ')
+        body.style.backgroundColor = "yellow"
+        paras.style.color ="black" 
+        remainingGuess.style.color = 'black'
+        wrapper.style.backgroundColor = 'blue'
         inputListsFunction(input)
     }
 }

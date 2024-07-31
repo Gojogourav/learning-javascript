@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
   
   body {
@@ -9,7 +9,10 @@ html {
     margin: 0 auto;
     background-color: #212121;
   }
-  
+  .resultParas{
+    padding: 69px;
+  }
+
   .lastResult {
     color: white;
     padding: 7px;
@@ -18,6 +21,7 @@ html {
   .guesses {
     color: white;
     padding: 7px;
+    border-radius: 10px;
   }
   
   button {
@@ -65,7 +69,9 @@ html {
   }
   
   .guesses {
-    background-color: #7a7a7a;
+    color: black;
+    background-color: white;
+    display: inherit;
   }
   
   #wrapper {
@@ -76,6 +82,10 @@ html {
     background-color: #474747;
     color: #fff;
     font-size: 25px;
+    border-radius: 16px;
+  }
+  #wrapper h1{
+    border-radius: 16px;
   }
   
   h1 {
