@@ -89,12 +89,14 @@ html {
   }
   #guessField{
     border-radius: 16px;
+    border-color: #001aff41;
   }
   h1 {
     background-color: #161616;
   
     color: #fff;
     text-align: center;
+
   }
   
   p {
