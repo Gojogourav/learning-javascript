@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript tutorial</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //will print name after 2 sec
+    //setinterval will print name for 2 sec
+    const h1 = document.querySelector('h1')
+    const stop = document.querySelector('#stop')
+    const namePrint = function(){
+        console.log("name");
+        h1.innerHTML = "best js series"
+    }
+    const change = setTimeout(namePrint,2000)
+    stop.addEventListener('click',function(e){
+        //when you'll click stop button the timeout will be stopped before event occurs
+        e.preventDefault
+        clearTimeout(change)
+    })
+    
+</script>
+
+</html>
