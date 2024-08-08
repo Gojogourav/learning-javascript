@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api request</title>
+    <style>
+        *{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Value 	State 	Description<br>
+0 	UNSENT 	Client has been created. open() not called yet. <br>
+1 	OPENED 	open() has been called. <br>
+2 	HEADERS_RECEIVED 	send() has been called, and headers and status are available. <br>
+3 	LOADING 	Downloading; responseText holds partial data. <br>
+4 	DONE 	The operation is complete. <br> -->
+
+</div>    
+
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/gojogourav'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requesturl)
+
+    xhr.onload = function(){
+        if(xhr.status>=200 && xhr.status<300){
+            const data = JSON.parse(xhr.responseText)
+            console.log(data.name);
+
+            const div = document.createElement('div')
+            div.className = "card"
+            div.id = "card"
+
+            const divtext = document.createElement('div')
+            divtext.className = 'textdiv'
+            const text = document.createTextNode(data.name)
+            divtext.appendChild(text)
+            divtext.className = 'text'
+
+            const p = document.createElement('p')
+            p.textContent = `followers : ${data.followers}`
+            divtext.appendChild(p)
+
+            const divimg = document.createElement('div')
+            divimg.className = 'imgdiv'
+            const img = document.createElement('IMG')
+            img.style.width = '200px'
+            img.style.padding = '10px'
+            img.style.borderRadius = '10px'
+            img.src = data.avatar_url
+            divimg.appendChild(img)
+
+
+            div.appendChild(divtext)
+            div.appendChild(divimg)
+            document.body.appendChild(div)
+            
+            //adding style to elements
+            p.style.margin = '0px'
+            div.style.backgroundColor = '#c8c6b4'
+            div.style.borderRadius = '10px'
+            divtext.style.padding = '12px'
+            divtext.style.textAlign = 'center'
+            divimg.style.padding = '10px'
+            divimg.style.borderRadius = '10px'
+            div.style.width = 'min-content'
+        }else{
+            console.error('Error :',xhr.statusText)
+        }
+    }
+    
+    xhr.send()
+</script>
+</html>

@@ -11,7 +11,6 @@ window.addEventListener('keydown',(e)=>{
         </tr>
 
         <tr>
-        
             <td>${e.key==" " ? "space" :e.key }</td>
             <td>${e.keyCode}</td>
             <td>${e.code}</td>
@@ -20,3 +19,5 @@ window.addEventListener('keydown',(e)=>{
     </div>`
 })
 //you cannot write if else statements directly inside the control structures
+
+
